@@ -8,8 +8,8 @@ define([
             var value = '';
             // 環境変数の値を取得する方法に応じて、適切なコードを追加してください
             // 例えば、以下のようにprocess.envを使用して環境変数の値を取得できます
-            // value = process.env[variableName];
-            return "HELLO";
+            value = process.env.RESEARCH_NAME;
+            return value;
         }
 
         // ヘッダーに環境変数の値を表示する関数
