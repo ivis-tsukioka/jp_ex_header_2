@@ -1,0 +1,5 @@
+Type: IPython Notebook Extension
+Name: Hello Front End Ext
+Description: This is my first front-end extension
+Link: readme.md
+Main: main.js
