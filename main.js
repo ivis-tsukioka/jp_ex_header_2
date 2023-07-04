@@ -14,6 +14,7 @@ define([
 
         // ヘッダーに環境変数の値を表示する関数
         function displayEnvironmentVariable() {
+            console.info('displayEnvironmentVariable()')
             var variableName = 'RESEARCH_NAME';  // 表示したい環境変数の名前に置き換えてください
             var variableValue = getEnvironmentVariableValue(variableName);
 
@@ -30,6 +31,7 @@ define([
 
         // Jupyter Notebookが読み込まれた後に実行される処理
         if (Jupyter.notebook._fully_loaded) {
+            console.info('if (Jupyter.notebook._fully_loaded) {')
             displayEnvironmentVariable();
         } else {
             events.on('notebook_loaded.Notebook', displayEnvironmentVariable);
